@@ -1,4 +1,6 @@
 @use "./partials/colors" as *;
+@use "./partials/mixins" as *;
+@use "./partials/typographys" as *;
 
 .section__padding {
   padding: 4rem 6rem;
@@ -11,7 +13,7 @@
 }
 
 .app__bg {
-  background: url("./assets/images/bg.png");
+  background: url("../src/assets/images/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
