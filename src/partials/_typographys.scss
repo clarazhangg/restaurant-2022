@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Cormorant Upright";
+  src: url(../assets/fonts/CormorantUpright-Bold.ttf) format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Cormorant Upright";
+  src: url(../assets/fonts/CormorantUpright-SemiBold.ttf) format("ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Cormorant Upright";
+  src: url(../assets/fonts/CormorantUpright-Medium.ttf) format("ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cormorant Upright";
+  src: url(../assets/fonts/CormorantUpright-Regular.ttf) format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cormorant Upright";
+  src: url(../assets/fonts/CormorantUpright-Light.ttf) format("ttf");
+  font-weight: 300;
+}
+
+$font-base: "Cormorant Upright", serif;
+$font-alt: "Open Sans", sans-serif;
