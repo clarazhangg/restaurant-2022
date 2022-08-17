@@ -1,3 +1,57 @@
+@use "../../partials/colors" as *;
+
 .app__navbar {
-  border: black 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-black;
+  padding: 1rem 2rem;
+
+  &-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & img {
+      width: 9.375rem;
+    }
+  }
+
+  &-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    & li {
+      margin: 0 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-grey;
+      }
+    }
+  }
+
+  &-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & a {
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: 0.5s ease;
+      &:hover {
+        border-bottom: 1px solid $color-golden;
+      }
+    }
+    & div {
+      width: 1px;
+      height: 30px;
+      background-color: $color-grey;
+    }
+  }
 }
