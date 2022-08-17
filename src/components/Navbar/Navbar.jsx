@@ -36,10 +36,10 @@ const Navbar = () => (
         Book Table
       </a>
     </div>
-    <div className="app__nav-smallscreen">
+    <div className="app__navbar-smallscreen">
       <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => {}} />
       <div
-        className="app__navbar-smallscreen-overlay"
+        className="app__navbar-smallscreen_overlay"
         flex__center
         slide-bottom
       >
@@ -48,7 +48,7 @@ const Navbar = () => (
           className="overlay__close"
           onClick={() => {}}
         />
-        <ul className="app__navbar-links">
+        <ul className="app__navbar-smallscreen_links">
           <li className="p__opensans">
             <a href="#home">Home</a>
           </li>
