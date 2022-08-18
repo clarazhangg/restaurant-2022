@@ -1,3 +1,9 @@
+//Animations
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
@@ -19,8 +25,42 @@
     transform: translateY(0);
   }
 }
+//up
+// .slide-up {
+//   -webkit-animation: slide-up 0.5s cubic-bezier(0.94, 0.45, 0.46, 0.25) both;
+//   animation: slide-up 0.5s cubic-bezier(0.94, 0.45, 0.46, 0.25) both;
+// }
 
-.slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+// @-webkit-keyframes slide-up {
+//   0% {
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//   }
+//   100% {
+//     -webkit-transform: translateY(-25%);
+//     transform: translateY(-25%);
+//   }
+// }
+
+// @keyframes slide-up {
+//   0% {
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//   }
+//   100% {
+//     -webkit-transform: translateY(-25%);
+//     transform: translateY(-25%);
+//   }
+// }
+
+//Responsive section
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
 }

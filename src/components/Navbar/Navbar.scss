@@ -1,4 +1,6 @@
 @use "../../partials/colors" as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/typographys" as *;
 
 .app__navbar {
   width: 100%;
@@ -19,18 +21,21 @@
   }
 
   &-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+    display: none;
+    @include tablet {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
 
-    & li {
-      margin: 0 1rem;
-      cursor: pointer;
+      & li {
+        margin: 0 1rem;
+        cursor: pointer;
 
-      &:hover {
-        color: $color-grey;
+        &:hover {
+          color: $color-grey;
+        }
       }
     }
   }
@@ -56,7 +61,7 @@
   }
 
   &-smallscreen {
-    // display: none;
+    display: flex;
 
     &_overlay {
       position: fixed;
@@ -69,20 +74,26 @@
 
       flex-direction: column;
       z-index: 5; //overlay is over the actrual page
-    }
-    & .overlay__close {
-      font-size: 27px;
-      color: $color-golden;
-      cursor: pointer;
-      position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
+
+      & .overlay__close {
+        font-size: 27px;
+        color: $color-golden;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
     }
     &_links {
       list-style: none;
 
       & li {
         margin: 2rem;
+        cursor: pointer;
+        color: $color-golden;
+        font-size: 2rem;
+        text-align: center; // like words doc 中线对齐
+        font-family: $font-base;
       }
     }
   }
