@@ -1,0 +1,27 @@
+@use "../../partials/colors" as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/typographys" as *;
+
+.app__header {
+  background-color: $color-black;
+
+  &-h1 {
+    font-family: $font-base;
+    color: $color-golden;
+    letter-spacing: 0.04em;
+    text-transform: uppercase; //all letter uppercase
+    line-height: 7.3125rem;
+    font-size: 4em;
+  }
+  &-img img {
+    width: 80%;
+  }
+}
+
+.app__wrapper {
+  &_info {
+    & p {
+      margin: 2rem 0;
+    }
+  }
+}
