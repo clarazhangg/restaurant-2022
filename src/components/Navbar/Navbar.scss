@@ -11,17 +11,22 @@
   padding: 1rem 2rem;
 
   &-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+    @include tablet {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
     & img {
-      width: 9.375rem;
+      width: 6.875rem;
+      @include tablet {
+        width: 9.375rem;
+      }
     }
   }
 
   &-links {
     display: none;
+
     @include tablet {
       flex: 1;
       display: flex;
@@ -41,9 +46,13 @@
   }
 
   &-login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: none;
+
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
     & a {
       margin: 0 1rem;
@@ -94,6 +103,9 @@
         font-size: 2rem;
         text-align: center; // like words doc 中线对齐
         font-family: $font-base;
+        &:hover {
+          color: $color-white;
+        }
       }
     }
   }
