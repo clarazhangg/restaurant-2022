@@ -1,4 +1,5 @@
 @use "../../partials/colors" as *;
+@use "../../partials/mixins" as *;
 
 .app__aboutus {
   position: relative; //able to move the overlay around
@@ -8,14 +9,26 @@
     inset: 0; //not often used; used when position is abslute and it can easily correspond to top bottom or right left (come on top of the content)
 
     & img {
-      width: 24.4375rem;
-      height: 25.9375rem;
+      width: 80%;
+      height: 20rem;
+
+      @include tablet {
+        width: 24.4375rem;
+        height: 25.9375rem;
+        z-index: 0;
+      }
+
       // z-index: 0; //G go behind the content
     }
   }
   &-content {
     width: 100%;
     z-index: 2; //content above G
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
 
     &_about {
       flex: 1; //push it to the right side
@@ -29,11 +42,18 @@
       & p {
         margin: 2rem 0;
         color: $color-grey;
+        @include desktop {
+          margin: 4rem 0;
+        }
       }
     }
 
     &_knife {
       margin: 2rem 4rem;
+
+      @include tablet {
+        margin: 4rem 4rem;
+      }
 
       & img {
         height: 910px;
