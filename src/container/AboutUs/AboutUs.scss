@@ -10,7 +10,8 @@
 
     & img {
       width: 80%;
-      height: 20rem;
+      height: 25rem;
+      object-fit: contain;
 
       @include tablet {
         width: 24.4375rem;
