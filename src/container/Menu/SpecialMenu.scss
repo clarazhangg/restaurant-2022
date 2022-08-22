@@ -1,0 +1,22 @@
+@use "../../partials/mixins" as *;
+@use "../../partials/colors" as *;
+
+.app__specialMenu {
+  flex-direction: column;
+  background-color: $color-black;
+
+  &-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &-menu {
+    width: 100%;
+
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row; //colume for mobile
+  }
+}
