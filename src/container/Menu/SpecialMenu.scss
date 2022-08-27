@@ -1,5 +1,6 @@
 @use "../../partials/mixins" as *;
 @use "../../partials/colors" as *;
+@use "../../partials/typographys" as *;
 
 .app__specialMenu {
   flex-direction: column;
@@ -18,5 +19,51 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: row; //colume for mobile
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    &-heading {
+      font-family: $font-base;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 58.5px;
+      letter-spacing: 0.04rem;
+      color: $color-golden;
+      @include tablet {
+        font-size: 45px;
+      }
+    }
+
+    &_wine,
+    &_cocktails {
+      flex: 1;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &_img {
+      width: 100%;
+
+      @include tablet {
+        width: 25.625rem;
+        margin: 0 2rem;
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &_items {
+      display: flex;
+      flex-direction: column;
+
+      margin: 2rem 0;
+      width: 100%;
+    }
   }
 }
