@@ -17,24 +17,28 @@
     margin: 2rem 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: row; //colume for mobile
+    align-items: center;
+    flex-direction: column; //colume for mobile
 
     @include tablet {
-      flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+    @include desktop {
+      flex-direction: row;
       width: 100%;
     }
 
-    &-heading {
+    &_heading {
       font-family: $font-base;
       font-size: 35px;
       font-weight: 600;
-      line-height: 58.5px;
+      line-height: 48.5px;
       letter-spacing: 0.04rem;
       color: $color-golden;
       @include tablet {
         font-size: 45px;
+        line-height: 58.5px;
       }
     }
 
@@ -50,6 +54,10 @@
 
       @include tablet {
         width: 25.625rem;
+        margin: 3rem 0;
+      }
+
+      @include desktop {
         margin: 0 2rem;
       }
 
@@ -64,6 +72,9 @@
 
       margin: 2rem 0;
       width: 100%;
+
+      @include tablet {
+      }
     }
   }
 }
