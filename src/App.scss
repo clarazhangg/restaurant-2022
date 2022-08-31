@@ -102,7 +102,7 @@ a {
   letter-spacing: 0.04em;
   text-transform: capitalize;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .headtext__cormorant {
@@ -118,48 +118,43 @@ a {
   width: 45px;
 }
 
-@include desktop {
-  .custom__button,
-  .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
-  }
+// @include desktop {
+//   .custom__button,
+//   .p__cormorant {
+//     font-size: 37px;
+//     line-height: 67px;
+//   }
 
-  .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
-  }
+//   .headtext__cormorant {
+//     font-size: 150px;
+//     line-height: 210px;
+//   }
 
-  .headtext__cormorant {
-    font-size: 150px;
-    line-height: 210px;
-  }
+//   .spoon__img {
+//     width: 80px;
+//   }
+// }
+// @media screen and (min-width: 2000px) {
+//   .custom__button,
+//   .p__cormorant {
+//     font-size: 37px;
+//     line-height: 67px;
+//   }
 
-  .spoon__img {
-    width: 80px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .custom__button,
-  .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
-  }
+//   .p__opensans {
+//     font-size: 30px;
+//     line-height: 50px;
+//   }
 
-  .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
-  }
+//   .headtext__cormorant {
+//     font-size: 150px;
+//     line-height: 210px;
+//   }
 
-  .headtext__cormorant {
-    font-size: 150px;
-    line-height: 210px;
-  }
-
-  .spoon__img {
-    width: 80px;
-  }
-}
+//   .spoon__img {
+//     width: 80px;
+//   }
+// }
 
 @media screen and (max-width: 1150px) {
   .app__wrapper {
