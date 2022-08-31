@@ -21,10 +21,12 @@
     flex-direction: column; //colume for mobile
 
     @include tablet {
-      align-items: flex-start;
+      align-items: center;
       flex-direction: row;
+      width: 100%;
     }
     @include desktop {
+      align-items: flex-start;
       flex-direction: row;
       width: 100%;
     }
@@ -54,16 +56,21 @@
 
       @include tablet {
         width: 25.625rem;
-        margin: 3rem 0;
+        margin: 3rem 1.5rem;
       }
 
       @include desktop {
         margin: 0 2rem;
+        width: 650px;
       }
 
       & img {
         width: 100%;
         height: auto;
+
+        @include desktop {
+          height: 920px;
+        }
       }
     }
     &_items {
