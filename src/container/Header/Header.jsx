@@ -21,6 +21,7 @@ const Header = () => (
         Explore Menu
       </button>
     </div>
+
     <div className="app__wrapper_img">
       <img src={images.welcome} alt="headerimage" />
     </div>
