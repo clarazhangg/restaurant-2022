@@ -48,12 +48,17 @@
 //     transform: translateY(0);
 //   }
 //   100% {
-//     -webkit-transform: translateY(-25%); 
+//     -webkit-transform: translateY(-25%);
 //     transform: translateY(-25%);
 //   }
 // }
 
 //Responsive section
+@mixin mobile {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
 @mixin tablet {
   @media (min-width: 768px) {
     @content;

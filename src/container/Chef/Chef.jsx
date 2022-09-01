@@ -5,7 +5,7 @@ import { images } from "../../constants";
 import "./Chef.scss";
 
 const Chef = () => (
-  <div className="app__bg app__wrapper section__heading">
+  <div className="app__bg app__wrapper section__padding">
     <div className="app__wrapper_img app__wrapper_img-reverse">
       <img src={images.chef} alt="chef" />
     </div>
@@ -15,7 +15,7 @@ const Chef = () => (
       <h1 className="headtext__cormorant">What We Believe In</h1>
 
       <div className="app__chef-content">
-        <div className="app__chef-cpntent_quote">
+        <div className="app__chef-content_quote">
           <img src={images.quote} alt="quote" />
           <p className="p__opensans">
             Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit.
@@ -30,7 +30,7 @@ const Chef = () => (
       </div>
 
       <div className="app__chef-sign">
-        <p>Kevin Lup</p>
+        <p>Kevin Luo</p>
         <p className="p__opensans">Chef & Founder</p>
         <img src={images.sign} alt="sign" />
       </div>
