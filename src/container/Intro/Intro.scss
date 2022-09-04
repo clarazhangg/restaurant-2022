@@ -1,0 +1,29 @@
+@use "../../partials/colors" as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/typographys" as *;
+
+.app__video {
+  height: 75vh;
+  position: relative;
+
+  & video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &-overlay {
+    position: absolute;
+    inset: 0; //shorthand for top, right, bottom, left, samilar to margin
+    //now overlay the video
+    background: rgba(0, 0, 0, 0.65);
+
+    &_circle {
+      width: 6.25rem;
+      height: 6.25rem;
+      border-radius: 50%;
+      border: 1px solid $color-golden;
+      cursor: pointer;
+    }
+  }
+}

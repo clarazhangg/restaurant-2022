@@ -23,7 +23,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="app__video">
+    <div className="app__video app__bg">
       <video
         src={meal}
         ref={vidRef}
