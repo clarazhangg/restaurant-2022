@@ -6,12 +6,15 @@ import { meal } from "../../constants";
 import "./Intro.scss";
 
 const Intro = () => {
-  const [playVideo, setPlayVideo] = useState(false); //originally setting the playVideo to false (pause)
-  const vidRef = React.useRef(); //will refer to the video object
+  //originally setting the playVideo to false (pause)
+  const [playVideo, setPlayVideo] = useState(false);
+  //will refer to the video object
+  const vidRef = React.useRef();
 
   const handleVideo = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo); //change the state using the previous state
 
+    // if else statement for video
     if (playVideo) {
       vidRef.current.pause();
     } else {
@@ -34,11 +37,12 @@ const Intro = () => {
           className="app__video-overlay_circle flex__center"
           onClick={handleVideo}
         >
+          {/* if else statement for button */}
           {
             playVideo ? (
-              <BsPauseFill /> //if the playVideo is true(playing) button will pause
+              <BsPauseFill color="#fff" frontSize={30} /> //if the playVideo is true(playing) button will pause
             ) : (
-              <BsFillPlayFill />
+              <BsFillPlayFill color="#fff" frontSize={30} />
             ) //else playVideo will play
           }
         </div>
