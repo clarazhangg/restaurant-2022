@@ -16,7 +16,12 @@
     position: absolute;
     inset: 0; //shorthand for top, right, bottom, left, samilar to margin
     //now overlay the video
+    opacity: 0;
     background: rgba(0, 0, 0, 0.65);
+
+    &:hover {
+      opacity: 1;
+    }
 
     &_circle {
       width: 6.25rem;

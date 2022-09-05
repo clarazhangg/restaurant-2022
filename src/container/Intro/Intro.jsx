@@ -32,7 +32,7 @@ const Intro = () => {
         control={false}
         muted
       />
-      <div className="app__video-overlay flex__center">
+      <div className="flex__center app__video-overlay ">
         <div
           className="app__video-overlay_circle flex__center"
           onClick={handleVideo}
