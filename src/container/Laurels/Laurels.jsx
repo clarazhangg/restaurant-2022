@@ -4,9 +4,10 @@ import { SubHeading } from "../../components";
 import { images, data } from "../../constants";
 import "./Laurels.scss";
 
-const AwardCard = ({ award: { imgURL, title, subtitle } }) => (
+//not going to reuse this
+const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
   <div className="app__laurels_awards-card">
-    <img src={imgURL} alt="award" />
+    <img src={imgUrl} alt="award" />
   </div>
 );
 
