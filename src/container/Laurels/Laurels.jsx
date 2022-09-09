@@ -4,7 +4,7 @@ import { SubHeading } from "../../components";
 import { images, data } from "../../constants";
 import "./Laurels.scss";
 
-//not going to reuse this
+//not going to reuse this, so not importing as a component
 const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
   <div className="app__laurels_awards-card">
     <img src={imgUrl} alt="award" />
