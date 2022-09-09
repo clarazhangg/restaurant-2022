@@ -1,0 +1,32 @@
+.app__laurels_awards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; //content can be in more than one line
+
+  margin-top: 3rem;
+
+  &-card {
+    flex: 1; //each card takes one space
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 14.375rem;
+
+    margin: 1rem;
+
+    & img {
+      width: 3.125rem;
+      height: 3.125rem;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media screen {
+}
