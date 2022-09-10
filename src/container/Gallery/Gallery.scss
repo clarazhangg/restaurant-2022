@@ -1,0 +1,9 @@
+@use "../../partials/colors" as *;
+
+.app__gallery {
+  display: flex;
+  flex-direction: row;
+
+  background-color: $color-black;
+  padding: 4rem 0 4rem 6rem;
+}
