@@ -29,7 +29,7 @@ const Gallery = () => {
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p__opensans" style={{ color: "#AAA", marginTop: "2rem" }}>
           Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Volutpat
-          Mattis Ipsum Turpis Elit Elit Scelerisque Egestas Mu.
+          Mattis Ipsum Turpis Elit Elit Scelerisque Egestas Mua.
         </p>
         <button type="button" className="custom__button">
           Learn More
