@@ -40,9 +40,9 @@ const Intro = () => {
           {/* if else statement for button */}
           {
             playVideo ? (
-              <BsPauseFill color="#fff" frontSize={30} /> //if the playVideo is true(playing) button will pause
+              <BsPauseFill color="#fff" /> //if the playVideo is true(playing) button will pause
             ) : (
-              <BsFillPlayFill color="#fff" frontSize={30} />
+              <BsFillPlayFill color="#fff" />
             ) //else playVideo will play
           }
         </div>
