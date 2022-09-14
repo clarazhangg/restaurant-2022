@@ -89,5 +89,10 @@
   }
 
   &__arrow-icon {
+    color: $color-golden;
+    font-size: 2rem;
+    cursor: pointer;
+    background: $color-black;
+    border-radius: 0.3125rem;
   }
 }

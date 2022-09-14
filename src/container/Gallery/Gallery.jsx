@@ -54,16 +54,15 @@ const Gallery = () => {
               <BsInstagram className="gallery__image-icon" />
             </div>
           ))}
-
-          <BsArrowLeftShort
-            className="gallery__arrow-icon"
-            onClick={() => scroll("left")}
-          />
-          <BsArrowRightShort
-            className="gallery__arrow-icon"
-            onClick={() => scroll("right")}
-          />
         </div>
+        <BsArrowLeftShort
+          className="gallery__arrow-icon"
+          onClick={() => scroll("left")}
+        />
+        <BsArrowRightShort
+          className="gallery__arrow-icon"
+          onClick={() => scroll("right")}
+        />
       </div>
     </div>
   );
