@@ -6,4 +6,76 @@
 
   background-color: $color-black;
   padding: 4rem 0 4rem 6rem;
+
+  &-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    min-width: 31.25rem;
+    padding-right: 2rem;
+
+    &button {
+      margin-top: 1rem;
+    }
+  }
+
+  &-images {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    position: relative;
+
+    &_container {
+      display: flex;
+      flex-direction: row;
+      width: max-content; //maximum of the spcific content
+      overflow-x: scroll; // scroll images
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &_card {
+      position: relative;
+      min-width: 18.75rem;
+      height: 27.9375rem;
+      margin-right: 2rem;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        transition: 0.5s ease;
+
+        &:hover {
+          opacity: 0.35;
+        }
+      }
+    }
+
+    &-arrow {
+      width: 100%;
+    }
+  }
+}
+
+.gallery__image-icon {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
 }
