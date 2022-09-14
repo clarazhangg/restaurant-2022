@@ -63,19 +63,31 @@
 
     &-arrow {
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 1rem;
+      position: absolute;
+      bottom: 5%;
     }
   }
 }
 
-.gallery__image-icon {
-  position: absolute;
-  color: white;
-  font-size: 2rem;
-  opacity: 0.5;
-  transition: 0.5s ease;
-  cursor: pointer;
+.gallery {
+  &__image-icon {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    cursor: pointer;
 
-  &:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__arrow-icon {
   }
 }
