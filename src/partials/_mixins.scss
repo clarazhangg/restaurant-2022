@@ -59,13 +59,38 @@
     @content;
   }
 }
+@mixin mobile2 {
+  @media (min-width: 650px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: 768px) {
     @content;
   }
 }
+
+@mixin tablet2 {
+  @media (min-width: 850px) {
+    @content;
+  }
+}
+
+@mixin desktop0 {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin desktop2 {
+  @media (min-width: 2000px) {
     @content;
   }
 }
