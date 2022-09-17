@@ -3,10 +3,18 @@
 
 .app__gallery {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   background-color: $color-black;
-  padding: 4rem 0 4rem 6rem;
+  padding: 4rem 0 4rem 2rem;
+
+  @include tablet {
+    padding: 4rem 0 4rem 4rem;
+  }
+  @include dektop {
+    flex-direction: row;
+    padding: 4rem 0 4rem 6rem;
+  }
 
   &-content {
     flex: 1;
@@ -17,6 +25,11 @@
 
     min-width: 31.25rem;
     padding-right: 2rem;
+
+    @include desktop2 {
+      min-width: 62.5rem;
+      padding-right: 4rem;
+    }
 
     &button {
       margin-top: 1rem;
@@ -29,6 +42,11 @@
     flex-direction: row;
     max-width: 50%;
     position: relative;
+
+    @include desktop0 {
+      max-width: 100%;
+      margin: 5rem 0;
+    }
 
     &_container {
       display: flex;
@@ -48,6 +66,11 @@
       min-width: 18.75rem;
       height: 27.9375rem;
       margin-right: 2rem;
+
+      @include desktop2 {
+        min-width: 25rem;
+        height: 34.375rem;
+      }
 
       & img {
         width: 100%;
