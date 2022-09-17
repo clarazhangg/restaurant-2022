@@ -1,4 +1,5 @@
 @use "../../partials/colors" as *;
+@use "../../partials/mixins" as *;
 
 .app__gallery {
   display: flex;
