@@ -8,10 +8,7 @@
   background-color: $color-black;
   padding: 4rem 0 4rem 2rem;
 
-  @include tablet {
-    padding: 4rem 0 4rem 4rem;
-  }
-  @include dektop {
+  @include desktop0 {
     flex-direction: row;
     padding: 4rem 0 4rem 6rem;
   }
