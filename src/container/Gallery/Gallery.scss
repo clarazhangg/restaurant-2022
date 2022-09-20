@@ -8,10 +8,13 @@
   background-color: $color-black;
   padding: 4rem 0 4rem 2rem;
 
-  @include desktop0 {
-    flex-direction: row;
-    padding: 4rem 0 4rem 6rem;
-  }
+  // @include tablet {
+  //   flex-direction: row;
+  //   padding: 4rem 0 4rem 4rem;
+  // }
+  // @include desktop {
+  //   padding: 4rem 0 4rem 6rem;
+  // }
 
   &-content {
     flex: 1;
@@ -40,10 +43,10 @@
     max-width: 50%;
     position: relative;
 
-    @include desktop0 {
-      max-width: 100%;
-      margin: 5rem 0;
-    }
+    // @include desktop {
+    //   max-width: 100%;
+    //   margin: 5rem 0;
+    // }
 
     &_container {
       display: flex;
@@ -64,10 +67,10 @@
       height: 27.9375rem;
       margin-right: 2rem;
 
-      @include desktop2 {
-        min-width: 25rem;
-        height: 34.375rem;
-      }
+      // @include desktop2 {
+      //   min-width: 25rem;
+      //   height: 34.375rem;
+      // }
 
       & img {
         width: 100%;
