@@ -1,3 +1,5 @@
+@use "../../partials/mixins" as *;
+
 .app__laurels_awards {
   display: flex;
   justify-content: flex-start;
@@ -7,13 +9,21 @@
   margin-top: 3rem;
 
   &-card {
+    width: 100%;
     flex: 1; //each card takes one space
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     min-width: 14.375rem;
 
-    margin: 1rem;
+    margin: 1rem 0;
+
+    @include tablet {
+      min-width: 14.375rem;
+    }
+    @include desktop {
+      min-width: 24.375rem;
+    }
 
     & img {
       width: 3.125rem;
@@ -26,7 +36,4 @@
       margin-left: 1rem;
     }
   }
-}
-
-@media screen {
 }

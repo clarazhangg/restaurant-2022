@@ -12,7 +12,7 @@ const Header = () => (
       <SubHeading title="Chase the new flaver" />{" "}
       {/* "title"passing as a prop */}
       <h1 className="app__header-h1">The Key to Fine Dinning</h1>
-      <p className="p__opensans">
+      <p className="p__opensans" style={{ margin: "2rem 0" }}>
         Sit Tellus Lobortis Sed Senectus Vivamus Molestie. Condimentum Volutpat
         Morbi Facilisis Quam Scelerisque Sapien. Et, Penatibus Aliquam Amet
         Tellus
