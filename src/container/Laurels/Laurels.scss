@@ -14,12 +14,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    min-width: 14.375rem;
+    min-width: 100%;
 
     margin: 1rem 0;
 
     @include tablet {
       min-width: 14.375rem;
+      margin: 1rem;
     }
     @include desktop {
       min-width: 24.375rem;
