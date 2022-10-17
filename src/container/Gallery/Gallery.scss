@@ -2,19 +2,20 @@
 @use "../../partials/mixins" as *;
 
 .app__gallery {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   background-color: $color-black;
-  padding: 4rem 0 4rem 2rem;
+  padding: 4rem 0 4rem 6rem;
 
-  // @include tablet {
-  //   flex-direction: row;
-  //   padding: 4rem 0 4rem 4rem;
-  // }
-  // @include desktop {
-  //   padding: 4rem 0 4rem 6rem;
-  // }
+  @include mobile2 {
+    padding: 4rem 0 4rem 2rem;
+  }
+  @include tablet2 {
+    padding: 4rem 0 4rem 4rem;
+  }
+  @include desktop0 {
+    flex-direction: column;
+  }
 
   &-content {
     flex: 1;
@@ -26,13 +27,20 @@
     min-width: 31.25rem;
     padding-right: 2rem;
 
+    @include mobile2 {
+      min-width: 100%;
+    }
     @include desktop2 {
       min-width: 62.5rem;
       padding-right: 4rem;
     }
 
-    &button {
+    & button {
       margin-top: 1rem;
+
+      @include desktop2 {
+        margin-top: 2rem;
+      }
     }
   }
 
@@ -43,10 +51,10 @@
     max-width: 50%;
     position: relative;
 
-    // @include desktop {
-    //   max-width: 100%;
-    //   margin: 5rem 0;
-    // }
+    @include desktop0 {
+      max-width: 100%;
+      margin: 5rem 0;
+    }
 
     &_container {
       display: flex;
@@ -67,10 +75,14 @@
       height: 27.9375rem;
       margin-right: 2rem;
 
-      // @include desktop2 {
-      //   min-width: 25rem;
-      //   height: 34.375rem;
-      // }
+      @include mobile2 {
+        min-width: 240px;
+        height: 320px;
+      }
+      @include desktop2 {
+        min-width: 25rem;
+        height: 34.1875rem;
+      }
 
       & img {
         width: 100%;
