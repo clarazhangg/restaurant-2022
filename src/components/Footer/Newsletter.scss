@@ -1,0 +1,33 @@
+@use "../../partials/colors" as *;
+@use "../../partials/typographys" as *;
+@use "../../partials/mixins" as *;
+
+.app__newsletter {
+  padding: 2rem 4rem;
+  border: 1px solid $color-golden;
+  background: $color-black;
+
+  &-heading {
+    text-align: center;
+  }
+
+  &-input {
+    flex-direction: row;
+    margin-top: 3rem;
+    & input {
+      width: 38.75rem;
+      border: 1px solid $color-golden;
+      border-radius: 0.3125rem;
+      font-size: 1rem;
+      font-family: $font-base;
+      color: $color-white;
+
+      margin-right: 2rem;
+      padding: 0.75rem 1rem;
+      background: $color-black;
+    }
+    & button {
+      width: max-content;
+    }
+  }
+}
