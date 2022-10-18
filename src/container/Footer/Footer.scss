@@ -1,4 +1,6 @@
 @use "../../partials/colors" as *;
+@use "../../partials/typographys" as *;
+@use "../../partials/mixins" as *;
 
 .app__footer {
   width: 100%;
@@ -12,4 +14,83 @@
 
   background-color: $color-black;
   padding-top: 0;
+  @include mobile2 {
+    padding: 0 0 2rem 0;
+  }
+
+  &-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 5rem;
+    padding: 0 2rem;
+
+    @include desktop0 {
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    &_contact,
+    &_logo,
+    &_work {
+      flex: 1;
+      margin: 1rem;
+      text-align: center;
+
+      @include desktop0 {
+        margin: 2rem 0;
+        width: 100%;
+      }
+    }
+
+    &_logo img:first-child {
+      width: 13.125rem;
+      margin-bottom: 0.75rem;
+
+      @include mobile {
+        width: 80%;
+      }
+    }
+
+    &_work p:nth-child(2n + 1) {
+      margin-bottom: 1rem;
+    }
+
+    &_icons {
+      margin-top: 0.5rem;
+
+      & svg {
+        color: $color-white;
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-golden;
+        }
+      }
+    }
+  }
+  &-headtext {
+    font-family: $font-base;
+    color: $color-white;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+
+    @include desktop2 {
+      font-size: 3.1875rem;
+      line-height: 3.8125rem;
+    }
+  }
+}
+
+.footer__copyright {
+  margin-top: 3rem;
 }
