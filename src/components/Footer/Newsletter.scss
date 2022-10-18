@@ -6,14 +6,30 @@
   padding: 2rem 4rem;
   border: 1px solid $color-golden;
   background: $color-black;
+  @include mobile2 {
+    padding: 2rem 0;
+    border: none;
+  }
 
   &-heading {
     text-align: center;
+    & h1 {
+      @include mobile {
+        font-size: 2rem;
+        line-height: 3.125rem;
+      }
+    }
   }
 
   &-input {
     flex-direction: row;
     margin-top: 3rem;
+
+    @include tablet2 {
+      flex-direction: column;
+      width: 100%;
+    }
+
     & input {
       width: 38.75rem;
       border: 1px solid $color-golden;
@@ -25,7 +41,16 @@
       margin-right: 2rem;
       padding: 0.75rem 1rem;
       background: $color-black;
+
+      @include tablet2 {
+        margin: 0 0 2rem 0;
+        width: 100%;
+      }
+      @include desktop2 {
+        font-size: 2rem;
+      }
     }
+
     & button {
       width: max-content;
     }
