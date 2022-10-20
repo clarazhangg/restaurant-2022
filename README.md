@@ -1,5 +1,7 @@
 Hi there,
-this is a practice project developed using react 💜. Hope you like it.
+
+This is a restaurant project developed using react 💜, it is fully responsive.
+Hope you like it.
 
 To start:
 
